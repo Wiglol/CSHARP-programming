@@ -1,0 +1,1 @@
+Tecken fel >= bad > good
