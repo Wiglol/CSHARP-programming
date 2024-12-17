@@ -1,60 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace u._4_prov
+namespace Prov_U._6
 {
-    class Program
+    class Game
     {
+        public string Name { get; set; }
+        public string Publisher { get; set; }
+        public string Year { get; set; }
+        public string Genre { get; set; }
+
+
+        // Create a class constructor for the Game class
+         public Game(string name, string publisher, string year, string genre)
+        {
+            Name = name;
+            Publisher = publisher;
+            Year = year; 
+            Genre = genre;
+
+
+        }
+
         static void Main(string[] args)
         {
-            Console.Write("Enter the first number: ");
-            int input1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Enter the second number: ");
-            int input2 = Convert.ToInt32(Console.ReadLine());
-
-            string sum = Add(input1, input2);
-            string difference = Subtract(input1, input2);
-            string product = Multiply(input1, input2);
-            string quotient = Divide(input1, input2);
-
-            Console.WriteLine($"The sum of the numbers is: {sum}");
-            Console.WriteLine($"The difference of the numbers is: {difference}");
-            Console.WriteLine($"The product of the numbers is: {product}");
-            Console.WriteLine($"The quotient of the numbers is: {quotient}");
-
-            Console.ReadLine();
+           
         }
-
-
-        static string Add(string input1, string input2)
-        {
-            return input1 + input2;
-        }
-
-        static string Subtract(string num1, string num2)
-        {
-            return num1 + "-" + num2;
-        }
-
-
-        static string Multiply(string num1, string num2)
-        {
-            return num1 + "*" + num2;
-        }
-
-        static string Divide(string num1, string num2)
-        {
-            return num1 + "/" + num2;
-        }
-
-
-
-
-
-
     }
 }
